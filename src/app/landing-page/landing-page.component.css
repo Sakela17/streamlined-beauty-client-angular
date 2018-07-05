@@ -1,0 +1,163 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  /*background-image: url('../images/black_white_orchid.jpg');*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('../../assets/images/black_white_orchid.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-page-skip-link a {
+  font-size: 12px;
+  clip: rect(0,0,0,0);
+  display: inline-block;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.landing-page-skip-link a:focus {
+  margin-left: 1.7rem;
+  clip: auto;
+  color: #fff;
+  height: auto;
+  overflow: visible;
+  position: absolute;
+  width: auto;
+  top: 0;
+  z-index: 10000;
+}
+
+.landing-page-main-section {
+  position: relative;
+  top: 80px;
+  margin-bottom: 4em;
+
+}
+
+.landing-page-hero-section {
+  display: flex;
+  flex-direction: column;
+  /*flex-flow: wrap;*/
+  align-items: center;
+  justify-content: center;
+  /*margin: 1em;*/
+  /*height: 100vh;*/
+  height: calc(100vh - 80px);
+}
+
+.landing-page-welcome-header {
+  color: white;
+  font-size: calc(1.5em + .5vw);
+  text-align: center;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.landing-page-welcome-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.landing-page-get-started-link {
+  display: inline-block;
+  height: 40px;
+  margin: 1em;
+  padding-left: 3px;
+  padding-right: 3px;
+
+  /*width: */
+  color: #ffffff;
+  background-color: #ce1277;
+  border: 1px solid #ce1277;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+
+
+  min-width: 130px;
+  max-width: 200px;
+}
+
+.landing-page-how-works-link {
+  display: inline-block;
+  height: 40px;
+  margin: 1em;
+  padding-left: 3px;
+  padding-right: 3px;
+
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  /*color: #ce1277;*/
+  /*background-color: none;*/
+  /*border: 1px solid #ce1277;*/
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+
+
+  min-width: 130px;
+  max-width: 200px;
+}
+
+.landing-page-how-works-section * {
+  margin: 1em;
+
+  padding: 0;
+  list-style: none;
+}
+
+.landing-page-how-works-section li::before {
+  content: "•";
+  color: #ce1277;
+  padding-right: 1em;
+}
+
+.landing-page-how-works-section {
+  /*margin: 1em;*/
+
+}
+
+@media only screen and (min-width: 450px) {
+
+  .landing-page-hero-section {
+    margin: 0 auto;
+    width: 70vw;
+    /*flex-direction: row;*/
+    flex-wrap: wrap;
+  }
+
+  #landing-page-how-works-wrapper {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto
+  }
+
+  .landing-page-how-works-section {
+    flex: 1 1 0
+  }
+
+  .landing-page-welcome-header {
+    /*order: -1;*/
+    /*flex: 1 0 100%;*/
+  }
+}

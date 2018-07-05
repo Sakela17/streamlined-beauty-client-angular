@@ -1,0 +1,117 @@
+.header-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: black;
+  color: white;
+}
+
+.header-bar nav {
+  margin-right: 1.7rem;
+}
+
+.header-link {
+  color: #ffffff;
+  font-size: calc(1.2rem + .9vw);
+  text-decoration: none;
+  margin-left: 1.7rem;
+}
+
+.header-link span {
+  color: #ce1277;
+}
+
+.header-link:active,
+.header-link:hover,
+.header-link:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+
+#menuButton {
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  width: 40px;
+  height: 40px;
+  transition: all .2s cubic-bezier(0, 1.26, .8, 1.28);
+}
+
+#menuButton:focus {
+  /* Restore focus behavior in non-webkit browsers like Firefox */
+  -moz-outline-radius: 3px;
+  outline: dotted 1px #FFFFFF;
+  /* Preseve default focus behavior in webkit browsers */
+  outline: auto 5px -webkit-focus-ring-color;
+  box-shadow: 0;
+}
+
+#menuButton:hover {
+  /*background-color: #96D9FF;*/
+  cursor: pointer;
+  /*border-color: #003557;*/
+  transform: scale(1.2, 1.2);
+}
+
+#menuButton:active {
+  border-color: #FFF;
+  /*background-color: #FFF;*/
+}
+
+.icon-bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: white;
+
+}
+
+.icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+ul {
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  left: auto;
+  top: 80px;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+  min-width: 250px;
+  padding-top: 20px;
+  z-index: 9999;
+  font-size: 1.2rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul a {
+  display: block;
+  color: #FFF;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+
+}
+
+ul a:hover,
+ul a:focus {
+  color: #ce1277;
+  border-bottom: 2px solid #ce1277;
+}

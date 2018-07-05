@@ -1,0 +1,54 @@
+<header class="header-bar" role="banner">
+  <div>
+    <a
+      routerLink="/"
+      class="header-link"
+    >
+      Streamlined
+      <span>Beauty</span>
+    </a>
+  </div>
+  <nav
+    role="navigation"
+  >
+    <button
+      id="menuButton"
+      type="button"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="menuState !== 'out'"
+      aria-label="MENU"
+      aria-controls="overlay-menu"
+    >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <ul [@slideInOut]="menuState">
+      <li>
+        <a
+          routerLink="/"
+          [attr.tabindex]="menuState !== 'out' ? 0 : -1"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/profile-list"
+          [attr.tabindex]="menuState !== 'out' ? 0 : -1"
+        >
+          Browse
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/"
+          [attr.tabindex]="menuState !== 'out' ? 0 : -1"
+        >
+          How It Works
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
