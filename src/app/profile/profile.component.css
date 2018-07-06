@@ -1,0 +1,66 @@
+.return-link-section {
+  padding: 20px;
+  background-color: #ffffff;
+  /*flex: 1 0 100%;*/
+  position: relative;
+  top: 80px;
+
+
+}
+
+.return-link-section a {
+  text-decoration: none;
+  /*text-transform: uppercase;*/
+  /*display: inline-block;*/
+  color: #ce1277;
+  /*letter-spacing: normal;*/
+  margin-left: 5px;
+}
+
+.return-link-section a:focus {
+  text-decoration: underline;
+}
+
+.data-card-services {
+  border-top: 1px solid #818181;
+  margin: 1em;
+  padding: 1em;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: center;*/
+  text-align: center;
+}
+
+.data-card-services-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1em;
+  text-align: center;
+  /*border: 1px solid black;*/
+  /*border-bottom: 1px solid black;*/
+  -webkit-box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+  box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+}
+
+.data-card-services-section ul {
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+
+.data-card-services-header {
+  margin: 0 auto;
+  padding: 0;
+  text-transform: uppercase;
+  text-decoration: underline;
+
+  color: #ce1277;
+  letter-spacing: 2px;
+  /*border-top: 1px solid black;*/
+  /*border-bottom: 1px solid black;*/
+}
+
+.data-card-services-section li {
+  list-style: none;
+}

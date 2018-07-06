@@ -1,0 +1,55 @@
+<app-header-bar></app-header-bar>
+<div class="return-link-section">
+  <a
+    routerLink="/profile-list"
+    aria-label="Return to the board"
+  >
+    &larr; &ensp; Back to the board
+  </a>
+</div>
+<main class="main-dashboard">
+  <section class="data-card-section">
+    <a
+      href="mailto:placeholder.email.com?subject=Schedule%20an%20appointment"
+      class="button-link"
+      aria-label="Click to send an email"
+    >
+      Send email
+    </a>
+    <article class="data-card-article">
+      <header class="data-card-header">
+        <div class="data-card-img">
+          <img src="../../assets/images/placeholder_person.jpg" class="data-user-img" alt="placeholder clip art" />
+        </div>
+        <div class="data-card-info">
+          <h3>{{user.full_name}}</h3>
+          <p>{{user.service_type}}</p>
+          <p>{{user.location}}</p>
+        </div>
+      </header>
+      <section class="data-card-services">
+        <h3 class="data-card-services-header">Services</h3>
+        <div class="data-card-services-section">
+          <div>
+            <ul>
+              <li
+                *ngFor="let service of userServices"
+              >
+                {{service.service}}
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li
+                *ngFor="let service of userServices"
+              >
+                {{service.price}}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </article>
+  </section>
+</main>

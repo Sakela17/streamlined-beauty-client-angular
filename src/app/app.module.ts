@@ -9,12 +9,13 @@ import { AppComponent } from './app.component';
 import { HeaderBarComponent } from './header-bar/header-bar.component';
 import { ProfileListComponent } from './profile-list/profile-list.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const appRoutes: Routes = [
   { path: 'signup', component: AppComponent},
   { path: 'profile-list', component: ProfileListComponent},
-  { path: 'board/:id', component: AppComponent},
+  { path: 'profile-list/profile/:id', component: ProfileComponent},
   { path: '', component: LandingPageComponent},
   { path: '**',
     redirectTo: '/',
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     AppComponent,
     HeaderBarComponent,
     ProfileListComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,6 @@
 <app-header-bar></app-header-bar>
 <main class="main-dashboard">
   <div class="main-dashboard-filter-form">
-    Hello Profile List
     <!--<form>-->
       <!--<label>-->
         <!--<select onChange={this.onLocationChange}>-->
@@ -21,4 +20,30 @@
     <!--</form>-->
   </div>
   <!--{users}-->
+  <section
+    *ngFor="let user of users"
+    class="data-card-section"
+  >
+    <article class="data-card-article">
+      <header class="data-card-header">
+        <div class="data-card-img">
+          <img src="../../assets/images/placeholder_person.jpg" class="data-user-img" alt="placeholder clip art" />
+        </div>
+        <div class="data-card-info">
+          <h3>{{user.full_name}}</h3>
+          <p>{{user.service_type}}</p>
+          <p>{{user.location}}</p>
+        </div>
+      </header>
+      <footer>
+        <a
+          routerLink="/profile-list/profile/{{user.user_id}}"
+          class="button-link"
+          aria-label="Click to view freelancer's profile"
+        >
+          View Profile
+        </a>
+      </footer>
+    </article>
+  </section>
 </main>
