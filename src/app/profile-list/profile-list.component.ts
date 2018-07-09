@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 import { User } from '../_models/user';
+import { Locations, ServiceTypes } from '../_models/data';
 import {ProfileListService} from '../_services/profile-list.service';
+import { DataService } from '../_services/data.service';
 
 @Component({
   selector: 'app-profile-list',
@@ -11,6 +13,10 @@ import {ProfileListService} from '../_services/profile-list.service';
 export class ProfileListComponent implements OnInit {
   user = new User();
   users: User[];
+  locations = new Locations();
+  serviceTypes = ServiceTypes;
+  currLocation: string;
+  currServiceType: string;
 
   constructor(
     private profileListService: ProfileListService

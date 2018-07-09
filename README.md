@@ -4,6 +4,8 @@ This project was built while studying for Engineering Immersion program at [Thin
 The goal was to learn Angular 6 independently and build something new with it in one week. Due to time constraints, I chose to refactor the client I previously built with React/Redux.
 That helped me to focus on learning the new technology vs. doing everything that building a new app entails.
 
+[View Live](https://streamlinedbeauty-angular.netlify.com/)
+
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 See deployment for notes on how to deploy the project on a live system.

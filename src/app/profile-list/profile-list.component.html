@@ -1,15 +1,21 @@
+<!--<div class="landing-page-skip-link">-->
+  <!--<a href="#welcome">Skip to main content</a>-->
+<!--</div>-->
 <app-header-bar></app-header-bar>
 <main class="main-dashboard">
   <div class="main-dashboard-filter-form">
-    <!--<form>-->
-      <!--<label>-->
-        <!--<select onChange={this.onLocationChange}>-->
-          <!--{/*<option value="" selected>select your beverage</option>*/}-->
-          <!--{this.props.locations.map((location, ind) => (-->
-          <!--<option value={location} key={ind}>{location}</option>-->
-          <!--))}-->
-        <!--</select>-->
-      <!--</label>-->
+    <form>
+      <label>
+        <select>
+          <option
+            *ngFor="let location of locations"
+            value={{location}}
+            >
+            {{location}}
+          </option>
+          ))}
+        </select>
+      </label>
       <!--<label>-->
         <!--<select onChange={this.onServiceChange}>-->
           <!--{this.props.serviceTypes.map((service, ind) => (-->
@@ -17,9 +23,8 @@
           <!--))}-->
         <!--</select>-->
       <!--</label>-->
-    <!--</form>-->
+    </form>
   </div>
-  <!--{users}-->
   <section
     *ngFor="let user of users"
     class="data-card-section"
